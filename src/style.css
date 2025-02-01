@@ -12,39 +12,6 @@ body {
     gap: 48px;
 }
 
-@media (min-width: 768px) {
-    .container {
-        padding: 36px 64px;
-    }
-
-    .grid {
-        grid-template-columns: 1fr 1.5fr;
-        grid-template-rows: 1fr;
-        gap: 96px;
-        position: relative;
-    }
-
-    .grid-left {
-        position: sticky;
-        top: 0; /* Ensures it stays visible at the top */
-        height: 92vh; /* Makes sure it doesn't collapse */
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-
-    .grid-right {
-        margin-top: 24px;
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
-
-    .left-3 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-}
-
 .grid-left {
     display: flex;
     flex-direction: column;
@@ -74,10 +41,9 @@ body {
 
 h1 {
     margin: 0;
-    font-family: "degular-display", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 64px;
+    font-family: "degular-display", "Arial", sans-serif;
+    font-weight: 900;
+    font-size: 48px;
     color: #FF10E7;
 }
 
@@ -86,7 +52,7 @@ h2 {
     font-family: "forma-djr-micro", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 h3 {
@@ -103,7 +69,7 @@ p {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 170%;
     color: #2c2c2c;
 }
 
@@ -131,13 +97,14 @@ button:hover {
     display: flex;
     gap: 8px;
     align-items: center;
+    transition: width 0.3s ease-in-out;
 }
 
 .link-line {
     width: 50px;
     height: 1px;
     background-color: rgb(130, 130, 130);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .menu-item:hover .link-line {
@@ -145,23 +112,32 @@ button:hover {
     background-color: black;
 }
 
-.menu-link {
+.menu-item:has(.menu-link.active) .link-line {
+    width: 100px;
+    background-color: black;
+}
+
+.menu-link { 
     font-family: "forma-djr-micro", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 150%;
-    color: rgb(130, 130, 130);
+    color: rgb(154, 154, 154); 
     text-decoration: none;
-    transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
-}
+    transition: color 0.1s ease-in-out, font-weight 0.3s ease-in-out;
+} 
 
 .menu-item:hover .menu-link {
     font-weight: 700;
     color: #1E1E1E;
 }
 
+.menu-link.active {
+    font-weight: 700;
+    color: black;
+}
+
 /* Prevent blue color after clicking */
-.menu-link:visited,
 .menu-link:focus,
 .menu-link:active,
 .project-link:visited,
@@ -172,14 +148,15 @@ button:hover {
     outline: none;
 }
 
-#projects, #experience {
+#websites, #webapp-projects, #experience, #education {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 56px;
 }
 
 .project-container, .experience-container {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     align-items: start;
 }
@@ -187,8 +164,13 @@ button:hover {
 .card-content {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
 }
+
+.extra-margin {
+    margin-top: 16px !important; /* Ensure space is applied */
+}
+
 
 .project-link {
     font-family: "forma-djr-micro", sans-serif;
@@ -211,9 +193,10 @@ button:hover {
     color: #FF10E7;
     font-family: "forma-djr-micro", sans-serif;
     font-weight: 400;
-    font-size: 12px;
-    padding: 8px 16px;
+    font-size: 14px;
+    padding: 6px 16px;
     border-radius: 25px;
+    height: fit-content;
 }
 
 .project-thumbnail {
@@ -247,7 +230,7 @@ button:hover {
     font-style: normal;
     font-size: 16px;
     line-height: 150%;
-    color: #686868;
+    color: #454545;
 }
 
 .dark-text {
@@ -258,4 +241,56 @@ button:hover {
     font-size: 16px;
     line-height: 150%;
     color: black;
+}
+
+.github-link {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.github-link img {
+    width: 20px;
+    height: 20px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 36px 64px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 1fr;
+        gap: 96px;
+        position: relative;
+    }
+
+    .grid-left {
+        position: sticky;
+        top: 0; /* Ensures it stays visible at the top */
+        height: 92vh; /* Makes sure it doesn't collapse */
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .grid-right {
+        margin-top: 36px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .left-3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .project-container, .experience-container {
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
 }

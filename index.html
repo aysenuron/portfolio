@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./src/style.css">
     <script src="./src/script.js" defer></script>
     <link rel="stylesheet" href="https://use.typekit.net/ezw7die.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ezw7die.css">
+        <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
     <main>
@@ -22,9 +24,11 @@
                             Web Developer / Designer
                         </h2>
                         <p>
-                            I build visually refined, accessible, and high-performing digital experiences for the web.
+                            Building polished, high-performing web experiences.
                         </p>
-                        <button>Contact Me</button>
+                        <a href="mailto:aysenur.onaran@elevateht.com?subject=Interested%20in%20Your%20Work&body=Hello Ayşenur, I’d love to discuss...">
+                            <button>Contact Me</button>
+                        </a>                        
                     </div>
                     <div class="left-2">
                         <div class="menu-item">
@@ -33,11 +37,19 @@
                         </div>
                         <div class="menu-item">
                             <div class="link-line"></div>
-                            <a class="menu-link" href="#projects">Projects</a>
+                            <a class="menu-link" href="#websites">Websites</a>
+                        </div>
+                        <div class="menu-item">
+                            <div class="link-line"></div>
+                            <a class="menu-link" href="#webapp-projects">Web Apps</a>
                         </div>
                         <div class="menu-item">
                             <div class="link-line"></div>
                             <a class="menu-link" href="#experience">Experience</a>
+                        </div>
+                        <div class="menu-item">
+                            <div class="link-line"></div>
+                            <a class="menu-link" href="#education">Education</a>
                         </div>
                     </div>
                     <div class="left-3">
@@ -48,92 +60,165 @@
 
                 <div class="grid-right">
                     <div id="about">
-                        <p>
-                            Hi, I’m Ayşenur Onaran—a <b>Webflow Developer</b> and Visual Designer with a growing focus on front-end development. With three years of experience in design, I’ve built intuitive interfaces, marketing assets, and seamless user experiences. I specialize in Webflow development, creating dynamic, high-performing websites while integrating custom code when needed.
+                        <p class="light-text">
+                            <p>I’m a <b>Web Developer and Visual Designer</b> passionate about crafting <b>pixel-perfect user interfaces</b> that merge <b>thoughtful design with clean code</b>. My expertise lies at the intersection of <b>design and development</b>, ensuring every digital experience is <b>both visually compelling and highly functional</b>.</p>
                             <br>
+                            <p>I specialize in <b>Webflow development and front-end technologies</b>, with additional experience in <b>GA4, Google Tag Manager, and SEO</b>, helping businesses enhance their online presence and performance.</p>
                             <br>
-                            At ElevateHT, I developed a six-step ROI calculator from scratch using HTML, CSS, and JavaScript, solving complex problems that standard tools couldn’t handle. This project deepened my interest in coding, leading me to expand my skills beyond Webflow.
+                            <p>Currently, I work at <b>Elevate Health Technologies</b> as a <b>Web Developer and Designer</b>, where I successfully led the company’s <b>website transition from WordPress to Webflow</b>, improving <b>performance, scalability, and ease of maintenance</b>. Over the past three years, I’ve worked on <b>B2B SaaS websites and marketing assets</b>, bringing brands to life through <b>strategic design and development</b>.</p>
                             <br>
+                            <p>Beyond work, I love <b>cycling, photography, and travel</b>, always drawing inspiration from my surroundings.</p>
                             <br>
-                            Now, I’m refining my expertise in JavaScript, Tailwind, and React, with a strong interest in micro-animations using GSAP to enhance interactivity and user experience. This website—version 1.0—marks my transition into full front-end development, and I’ll continue evolving with each new version.
-                            <br>
-                            <br>
-                            Thanks for stopping by—let’s build something great together!
+                            <p>Let’s collaborate and bring ideas to life! 🚀</p>
+                            
                         </p>
                     </div>
-                    <div id="projects">
+                    <section id="websites">
+                        <h2>Website Projects</h2>
                         <a class="project-link" href="www.elevateht.com" target="_blank">
                             <div class="project-container">
                                 <img class="project-thumbnail" src="./assets/projects/elevateht.png" alt="ElevateHT">
                                 <div class="card-content">
-                                    <h3>ElevateHT.com</h3>
-                                    <p>I designed and developed ElevateHT’s website in <b>Webflow</b>, successfully transitioning it from WordPress to a more scalable and flexible platform. The site now consists of <b>50+ pages</b>, where I manage <b>architecture, workflows, and user experience</b> to ensure a seamless and cohesive design. I integrate <b>HubSpot for forms and email automation</b> and implement <b>custom JavaScript</b> whenever advanced functionality is required.</p>
+                                    <h3>ElevateHT.com <span>&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></span></h3>
+                                    <p class="light-text">I designed and developed ElevateHT’s website in <b>Webflow</b>, successfully transitioning it from WordPress to a more scalable and flexible platform. The site now consists of <b>50+ pages</b>, where I manage <b>architecture, workflows, and user experience</b> to ensure a seamless and cohesive design. I integrate <b>HubSpot for forms and email automation</b> and implement <b>custom JavaScript</b> whenever advanced functionality is required.</p>
                                     <div class="tool-chips">
                                         <div class="tool-chip">Webflow</div>
                                         <div class="tool-chip">HubSpot</div>
+                                        <div class="tool-chip">JavaScript</div>
+                                        <div class="tool-chip">Figma</div>
+                                        <div class="tool-chip">Adobe CC</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="project-link" href="www.elevateht.com/buy-bill" target="_blank">
+                            <div class="project-container">
+                                <img class="project-thumbnail" src="./assets/projects/buy-bill.png" alt="buy and bill">
+                                <div class="card-content">
+                                    <h3>Buy & Bill Landing Page <span>&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></span></h3>
+                                    <p class="light-text">I designed and developed this Buy and Bill landing page in <b>Webflow</b> to drive conversions through strategic call-to-actions and seamless user experience. Beyond visual design and Webflow development, I structured <b>workflows to optimize engagement</b>.
+
+                                    </p>
+                                    <div class="tool-chips">
+                                        <div class="tool-chip">Webflow</div>
+                                        <div class="tool-chip">Webflow Optimize</div>
+                                        <div class="tool-chip">HubSpot</div>
+                                        <div class="tool-chip">JavaScript</div>
+                                        <div class="tool-chip">Adobe CC</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="project-link" href="https://aysenuron.github.io/ioTHOR/" target="_blank">
+                            <div class="project-container">
+                                <img class="project-thumbnail" src="./assets/projects/ioTHOR.png" alt="ioTHOR">
+                                <div class="card-content">
+                                    <h3>ioTHOR.com <span>&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></span></h3>
+                                    <p class="light-text">
+                                        I built <b>ioTHOR</b> using <b>HTML, CSS, and minimal JavaScript</b>, ensuring a structured and <b>responsive layout</b>. I've made <b>styling adjustments</b> to refine the look and improve usability across different screen sizes. This project strengthened my front-end development skills, especially in building responsive web pages.
+                                    </p>
+                                    <div class="tool-chips">
+                                        <div class="tool-chip">HTML & CSS</div>
                                         <div class="tool-chip">JavaScript</div>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                        <a class="project-link" href="www.elevateht.com" target="_blank">
+                        <a class="project-link" href="https://aysenuron.github.io/vanilla-stack/" target="_blank">
                             <div class="project-container">
-                                <img class="project-thumbnail" src="./assets/projects/elevateht.png" alt="ElevateHT">
+                                <img class="project-thumbnail" src="./assets/projects/VanillaStack.png" alt="VanillaStack">
                                 <div class="card-content">
-                                    <h3>ElevateHT.com</h3>
-                                    <p>I designed and developed ElevateHT’s website in <b>Webflow</b>, successfully transitioning it from WordPress to a more scalable and flexible platform. The site now consists of <b>50+ pages</b>, where I manage <b>architecture, workflows, and user experience</b> to ensure a seamless and cohesive design. I integrate <b>HubSpot for forms and email automation</b> and implement <b>custom JavaScript</b> whenever advanced functionality is required.</p>
+                                    <h3>
+                                        VanillaStack.com (in progress) <span>&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                                    </h3>
+                                    <p class="light-text extra-margin">
+                                        I am currently building <b>VanillaStack</b>, a <b>Notion.com-inspired clone</b>, using <b>HTML, CSS, and JavaScript</b>. This project focuses on replicating Notion’s clean and minimalistic design. By coding every element from scratch, I am refining my <b>front-end development skills</b> and deepening my understanding of layout, styling, and interactivity without relying on frameworks. The project is still in progress.
+                                    </p>
+                                    <a href="https://github.com/aysenuron/vanilla-stack" target="_blank">
+                                        <div class="github-link">
+                                            <img src="./assets/social/mdi_github.png" alt="github">
+                                            <p>Go to GitHub &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                                        </div>
+                                    </a>
                                     <div class="tool-chips">
-                                        <div class="tool-chip">Webflow</div>
-                                        <div class="tool-chip">HubSpot</div>
+                                        <div class="tool-chip">HTML & CSS</div>
                                         <div class="tool-chip">JavaScript</div>
+                                        <div class="tool-chip">Adobe CC</div>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                        <a class="project-link" href="www.elevateht.com" target="_blank">
+                        <a class="project-link" href="https://aysenuron.github.io/portfolio/" target="_blank">
                             <div class="project-container">
-                                <img class="project-thumbnail" src="./assets/projects/elevateht.png" alt="ElevateHT">
+                                <img class="project-thumbnail" src="./assets/projects/portfolio.png" alt="portfolio">
                                 <div class="card-content">
-                                    <h3>ElevateHT.com</h3>
-                                    <p>I designed and developed ElevateHT’s website in <b>Webflow</b>, successfully transitioning it from WordPress to a more scalable and flexible platform. The site now consists of <b>50+ pages</b>, where I manage <b>architecture, workflows, and user experience</b> to ensure a seamless and cohesive design. I integrate <b>HubSpot for forms and email automation</b> and implement <b>custom JavaScript</b> whenever advanced functionality is required.</p>
+                                    <h3>My Portfolio</h3>
+                                    <p class="light-text extra-margin">
+                                        This portfolio—<b>version 1.0</b>—marks my transition into <b>full front-end development</b>. Built with <b>HTML, CSS, and JavaScript</b>, it showcases my projects, skills, and clean, responsive design. I’ll continue evolving it with each new version as I grow.
+                                    </p>
+                                    <a href="https://github.com/aysenuron/portfolio" target="_blank">
+                                        <div class="github-link">
+                                            <img src="./assets/social/mdi_github.png" alt="github">
+                                            <p>Go to GitHub &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                                        </div>
+                                    </a>
                                     <div class="tool-chips">
-                                        <div class="tool-chip">Webflow</div>
-                                        <div class="tool-chip">HubSpot</div>
+                                        <div class="tool-chip">HTML & CSS</div>
                                         <div class="tool-chip">JavaScript</div>
+                                        <div class="tool-chip">Figma</div>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                        <a class="project-link" href="www.elevateht.com" target="_blank">
-                            <div class="project-container">
-                                <img class="project-thumbnail" src="./assets/projects/elevateht.png" alt="ElevateHT">
-                                <div class="card-content">
-                                    <h3>ElevateHT.com</h3>
-                                    <p>I designed and developed ElevateHT’s website in <b>Webflow</b>, successfully transitioning it from WordPress to a more scalable and flexible platform. The site now consists of <b>50+ pages</b>, where I manage <b>architecture, workflows, and user experience</b> to ensure a seamless and cohesive design. I integrate <b>HubSpot for forms and email automation</b> and implement <b>custom JavaScript</b> whenever advanced functionality is required.</p>
-                                    <div class="tool-chips">
-                                        <div class="tool-chip">Webflow</div>
-                                        <div class="tool-chip">HubSpot</div>
-                                        <div class="tool-chip">JavaScript</div>
+                    </section>
+                    <div id="webapp-projects">
+                        <h2>Web App Projects</h2>
+                        <div class="project-container">
+                            <img class="project-thumbnail" src="./assets/projects/wallet.png" alt="wallet">
+                            <div class="card-content">
+                                <h3>Wallet App</h3>
+                                <p class="light-text">
+                                    I designed and developed a <b>Wallet App</b> to quickly access card information when autofill fails. Built with <b>HTML, Tailwind CSS, and JavaScript</b>, this is a <b>front-end-only project</b> that does not store any data locally for security reasons. The app features <b>real-time input formatting</b>, an intuitive interface, and a seamless experience for copying card details when needed</b>.  
+                                    <br><br>  
+                                    <b>Scan the QR code to view it on your phone.</b>
+                                    </p>
+                                                                    <a href="https://github.com/aysenuron/wallet" target="_blank">
+                                    <div class="github-link">
+                                        <img src="./assets/social/mdi_github.png" alt="github">
+                                        <p>Go to GitHub &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></p>
                                     </div>
+                                </a>
+                                <div class="tool-chips">
+                                    <div class="tool-chip">HTML & CSS</div>
+                                    <div class="tool-chip">JavaScript</div>
+                                    <div class="tool-chip">Tailwind CSS</div>
                                 </div>
                             </div>
-                        </a>
-                        <a class="project-link" href="www.elevateht.com" target="_blank">
-                            <div class="project-container">
-                                <img class="project-thumbnail" src="./assets/projects/elevateht.png" alt="ElevateHT">
-                                <div class="card-content">
-                                    <h3>ElevateHT.com</h3>
-                                    <p>I designed and developed ElevateHT’s website in <b>Webflow</b>, successfully transitioning it from WordPress to a more scalable and flexible platform. The site now consists of <b>50+ pages</b>, where I manage <b>architecture, workflows, and user experience</b> to ensure a seamless and cohesive design. I integrate <b>HubSpot for forms and email automation</b> and implement <b>custom JavaScript</b> whenever advanced functionality is required.</p>
-                                    <div class="tool-chips">
-                                        <div class="tool-chip">Webflow</div>
-                                        <div class="tool-chip">HubSpot</div>
-                                        <div class="tool-chip">JavaScript</div>
+                        </div>
+                        <div class="project-container">
+                            <img class="project-thumbnail" src="./assets/projects/meal-tracker.png" alt="meal-tracker">
+                            <div class="card-content">
+                                <h3>Daily Cat Meal Tracker</h3>
+                                <p class="light-text">
+                                    I designed and developed a <b>Cat Meal Tracker</b> to effortlessly manage and monitor my pet's feeding schedule. Built with <b>HTML, CSS, and JavaScript</b>, this front-end project <b>stores data locally</b> to update meal counts on-screen in real time, with local storage being cleared each night to keep tracking fresh. As a pet owner myself, I crafted an <b>intuitive interface</b> that seamlessly fits into daily pet care routines.                                    <br><br>  
+                                    <b>Scan the QR code to view it on your phone.</b>
+                                    </p>
+                                                                    <a href="https://github.com/aysenuron/daily-cat-meal-tracker" target="_blank">
+                                    <div class="github-link">
+                                        <img src="./assets/social/mdi_github.png" alt="github">
+                                        <p>Go to GitHub &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></p>
                                     </div>
+                                </a>
+                                <div class="tool-chips">
+                                    <div class="tool-chip">HTML & CSS</div>
+                                    <div class="tool-chip">JavaScript</div>
+                                    <div class="tool-chip">Chrome Local Storage</div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div id="experience">
+                        <h2>Experience</h2>
                         <div class="experience-container">
                             <div class="timeline">
                                 <p class="light-text">2022 - Present</p>
@@ -166,9 +251,37 @@
                                         <div class="tool-chip">Figma</div>
                                         <div class="tool-chip">JavaScript</div>
                                         <div class="tool-chip">HTML & CSS</div>
-                                        <div class="tool-chip">GA4</div>
+                                        <div class="tool-chip">Google Analytics 4</div>
+                                        <div class="tool-chip">Google Tag Manager</div>
+                                        <div class="tool-chip">Semrush</div>
+                                        <div class="tool-chip">Hotjar</div>
                                     </div>
                             </div>
+                        </div>
+                    </div>
+                    <div id="education">
+                        <h2>Education</h2>
+                        <div class="experience-container">
+                            <div class="timeline">
+                                <p class="light-text">2019 - 2022</p>
+                            </div>
+                            
+                            <div class="experience-content">
+                                <h3>Middle East Technical University</h3>
+                                <p class="light-text">Master of Architecture</p>
+                            </div>
+                            
+                        </div>
+                        <div class="experience-container">
+                            <div class="timeline">
+                                <p class="light-text">2014 - 2019</p>
+                            </div>
+                            
+                            <div class="experience-content">
+                                <h3>Izmir University of Economics</h3>
+                                <p class="light-text">Bachelor of Architecture</p>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
