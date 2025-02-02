@@ -3,6 +3,14 @@ body {
     scroll-behavior: smooth;
 }
 
+a,
+a:focus,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
 .container {
     padding: 20px;
 }
@@ -24,10 +32,14 @@ body {
     gap: 96px;
 }
 
-.left-1, .left-2 {
+.left-1 {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.left-2 {
+    display: none;
 }
 
 .left-3 {
@@ -45,6 +57,10 @@ h1 {
     font-weight: 900;
     font-size: 48px;
     color: #FF10E7;
+}
+
+#sh {
+    font-size: 45px;
 }
 
 h2 {
@@ -68,9 +84,14 @@ p {
     font-family: "forma-djr-micro", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 170%;
-    color: #2c2c2c;
+    color: #5d5d5d;
+}
+
+p b {
+    color: #2b2b2b;
+    font-weight: 700;
 }
 
 button {
@@ -81,7 +102,7 @@ button {
     background-color: #63EC28;
     border-radius: 10px;
     border: none;
-    padding: 6px 16px;
+    padding: 6px 20px;
     display: inline-block;
     width: fit-content;
     box-shadow: 0 4px 8px rgb(221, 221, 221);
@@ -91,6 +112,7 @@ button {
 button:hover {
     box-shadow: none;
     cursor: pointer;
+    background-color: #57db1f;
 }
 
 .menu-item {
@@ -159,6 +181,16 @@ button:hover {
     flex-direction: column;
     gap: 20px;
     align-items: start;
+    transition: background-color 0.2s ease-in-out ;
+}
+
+.project-container {
+    padding: 16px 8px;
+}
+
+.project-container:hover {
+    background-color: #eefff0;
+    border-radius: 8px;
 }
 
 .card-content {
@@ -202,6 +234,13 @@ button:hover {
 .project-thumbnail {
     width: 200px;
     height: auto;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: #FFEEFD;
+}
+
+h3:hover {
+    color: #FF10E7;
 }
 
 .experience-container {
@@ -229,7 +268,7 @@ button:hover {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 170%;
     color: #454545;
 }
 
@@ -254,6 +293,14 @@ button:hover {
     height: 20px;
 }
 
+#qr-1, #qr-2, .qr-text {
+    display: none;
+}
+
+.app-link {
+    display: inline;
+}
+
 @media (min-width: 768px) {
     .container {
         padding: 36px 64px;
@@ -268,8 +315,8 @@ button:hover {
 
     .grid-left {
         position: sticky;
-        top: 0; /* Ensures it stays visible at the top */
-        height: 92vh; /* Makes sure it doesn't collapse */
+        top: 48px; /* Ensures it stays visible at the top */
+        height: 90vh; /* Makes sure it doesn't collapse */
         grid-column-start: 1;
         grid-column-end: 2;
     }
@@ -292,5 +339,23 @@ button:hover {
 
     h1 {
         font-size: 64px;
+    }
+
+    #sh {
+        font-size: 59px;
+    }
+
+    #qr-1, #qr-2, .qr-text {
+        display: block;
+    }
+
+    .app-link {
+        display: none;
+    }
+
+    .left-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
     }
 }
