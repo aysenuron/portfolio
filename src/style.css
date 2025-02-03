@@ -359,3 +359,23 @@ h3:hover {
         gap: 16px;
     }
 }
+
+@media (min-width: 992px) {
+    .container {
+        padding: 36px 96px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        padding: 36px 400px;
+    }
+
+    h1 {
+        font-size: 72px;
+    }
+
+    #sh {
+        font-size: 68px;
+    }
+}
