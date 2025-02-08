@@ -33,7 +33,7 @@
             <div class="grid">
                 <div class="grid-left">
                     <div class="left-1">
-                        <h1> Ay<span id="sh">ş</span>enur Onaran</h1>
+                        <h1 data-cursor-img="./assets/profile.png"> Ay<span id="sh">ş</span>enur Onaran</h1>
                         <h2>
                             Web Developer / Designer
                         </h2>
@@ -95,7 +95,7 @@
                         <h2>Website Projects</h2>
                         <a class="project-link" href="https://www.elevateht.com/" target="_blank" rel="noreferrer">
                             <div class="project-container">
-                                <img class="project-thumbnail" src="./assets/projects/elevateht.png" alt="ElevateHT">
+                                <img data-cursor-img="./assets/projects/elevateht.png" class="project-thumbnail" src="./assets/projects/elevateht.png" alt="ElevateHT">
                                 <div class="card-content">
                                     <h3>ElevateHT.com <span>&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></span></h3>
                                     <p class="light-text">I designed and developed ElevateHT’s website in <b>Webflow</b>, successfully transitioning it from WordPress. The site now consists of <b>50+ pages</b>, where I manage <b>architecture, workflows, and user experience</b> to ensure a seamless and cohesive design. I integrate <b>HubSpot for forms and email automation</b> and implement <b>custom JavaScript</b> whenever advanced functionality is required.</p>
@@ -111,7 +111,7 @@
                         </a>
                         <a class="project-link" href="https://www.elevateht.com/buy-bill" target="_blank" rel="noreferrer">
                             <div class="project-container">
-                                <img class="project-thumbnail" src="./assets/projects/buy-bill.png" alt="buy and bill">
+                                <img data-cursor-img="./assets/projects/buy-bill.png" class="project-thumbnail" src="./assets/projects/buy-bill.png" alt="buy and bill">
                                 <div class="card-content">
                                     <h3>Buy & Bill Landing Page <span>&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></span></h3>
                                     <p class="light-text">
@@ -129,7 +129,7 @@
                         </a>
                         <a class="project-link" href="https://aysenuron.github.io/ioTHOR/" target="_blank">
                             <div class="project-container">
-                                <img class="project-thumbnail" src="./assets/projects/ioTHOR.png" alt="ioTHOR">
+                                <img data-cursor-img="./assets/projects/ioTHOR.png" class="project-thumbnail" src="./assets/projects/ioTHOR.png" alt="ioTHOR">
                                 <div class="card-content">
                                     <h3>ioTHOR.com <span>&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></span></h3>
                                     <p class="light-text">
@@ -144,7 +144,7 @@
                         </a>
                         <a class="project-link" href="https://aysenuron.github.io/vanilla-stack/" target="_blank">
                             <div class="project-container">
-                                <img class="project-thumbnail" src="./assets/projects/VanillaStack.png" alt="VanillaStack">
+                                <img data-cursor-img="./assets/projects/VanillaStack.png" class="project-thumbnail" src="./assets/projects/VanillaStack.png" alt="VanillaStack">
                                 <div class="card-content">
                                     <h3>
                                         VanillaStack.com (in progress) <span>&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></span>
@@ -168,7 +168,7 @@
                         </a>
                         <a class="project-link" href="https://aysenuron.github.io/portfolio/" target="_blank">
                             <div class="project-container">
-                                <img class="project-thumbnail" src="./assets/projects/portfolio.png" alt="portfolio">
+                                <img data-cursor-img="./assets/projects/portfolio.png" class="project-thumbnail" src="./assets/projects/portfolio.png" alt="portfolio">
                                 <div class="card-content">
                                     <h3>My Portfolio</h3>
                                     <p class="light-text extra-margin">
@@ -329,6 +329,8 @@
         const cursor = new MouseFollower({
         container: document.body,
         speed: 0.3,
+        className: "mf-cursor",
+        skewingText: 1,
         });
     </script>
 </body>

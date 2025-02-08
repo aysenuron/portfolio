@@ -301,6 +301,13 @@ h3:hover {
     display: inline;
 }
 
+.mf-cursor {
+    color: #FF10E7;
+    font-family: "degular-display", "Arial", sans-serif;
+    font-size: 64px;
+
+}
+
 @media (min-width: 768px) {
     .container {
         padding: 36px 64px;
