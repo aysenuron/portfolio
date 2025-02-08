@@ -21,3 +21,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     sections.forEach((section) => observer.observe(section));
 });
+
+
+//GSAP Button Animation
+
+const linkBtn = document.querySelector(".link");
+const green = document.querySelector(".green");
+
+let hoverTL = gsap.timeline();
+hoverTL.pause();
+
+hoverTL.to(green, {width: "130%", height: "2.5em", top: "-0.6em", right: "-1em", ease: "Elastic.easeOut(0.25)", duration: 1});
+
+linkBtn.addEventListener("mouseenter", () => {
+    hoverTL.play();
+});
+
+linkBtn.addEventListener("mouseleave", () => {
+    hoverTL.reverse();
+});
