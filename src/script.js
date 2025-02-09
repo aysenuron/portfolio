@@ -31,7 +31,7 @@ const green = document.querySelector(".green");
 let hoverTL = gsap.timeline();
 hoverTL.pause();
 
-hoverTL.to(green, {width: "130%", height: "2.5em", top: "-0.6em", right: "-1em", ease: "Elastic.easeOut(0.25)", duration: 1});
+hoverTL.to(green, {width: "130%", height: "2.5em", top: "-0.6em", right: "-1em", ease: "Elastic.easeOut(1)", duration: 1.5});
 
 linkBtn.addEventListener("mouseenter", () => {
     hoverTL.play();
