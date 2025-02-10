@@ -22,11 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
     sections.forEach((section) => observer.observe(section));
 });
 
-
-//GSAP Button Animation
-
 const linkBtn = document.querySelector(".link");
 const green = document.querySelector(".green");
+
+//GSAP Button Animation
 
 let hoverTL = gsap.timeline();
 hoverTL.pause();

@@ -244,6 +244,8 @@ h3:hover {
 
 .resume-link {
     margin-top: 20px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .resume-link:hover {
