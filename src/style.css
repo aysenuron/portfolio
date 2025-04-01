@@ -3,6 +3,14 @@ body {
     scroll-behavior: smooth;
 }
 
+.mf-cursor-media img {
+    border: 20px solid #FF10E7 !important;
+    border-radius: 50%; /* Optional: for a circular border */
+    width: 100%; /* Ensure full width is applied */
+    height: auto; /* Maintain aspect ratio */
+    box-sizing: border-box; /* Include border in element's dimensions */
+}
+
 a,
 a:focus,
 a:active,
