@@ -39,3 +39,11 @@ linkBtn.addEventListener("mouseenter", () => {
 linkBtn.addEventListener("mouseleave", () => {
     hoverTL.reverse();
 });
+
+
+const cursor = new MouseFollower({
+    container: window,
+    speed: 0.3,
+    className: "mf-cursor",
+    skewingText: 1,
+});
